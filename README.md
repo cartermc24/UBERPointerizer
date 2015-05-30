@@ -8,27 +8,44 @@ This application identifies trips taken by checking to see when cars become unav
 The program is early in development and is currently a hobby and proof-of-concept however it is fully functional and works out of the box.  Please excuse some dirty code that needs to be cleaned up.  The project can be imported to Visual Studio and all you have to do is press Build to start using UBERPointerizer.  If you find issues or have any suggestions or comments please feel free to let me know.
 
 Features of UBERPointerizer:
+
 •	Track trips taken in a city (start and end points for each trip)
+
 •	View and generate heatmaps of free vehicles in a city
+
 •	View and generate maps that show the exact paths of free vehicles in a city
+
 •	View and generate maps that show all trips taken in a city
+
 •	Export the raw coordinates, paths, headings, and time the data was collected for all UBER vehicles in a city
+
 •	Export all identified trips for vehicles in a city
+
 •	Collects data from UBER’s servers directly or you can import captures of the API through CharlesProxy, for example.
+
 •	View all active vehicles and the exact latitude and longitude of each vehicle.
 
 To use UBERPointerizer online you need to collect the device ID, UBER ID, session token, cloudKitID, and a trait called “localeFileMD5”.  This information is easily collected using an SSL proxy such as CharlesProxy.  Open the app with the proxy running and the data can be collected from the request packet.  Since this application replicates the requests the iPhone application sends to UBER, this information is required.
 
-How to use UBERPointerizer
+How to use UBERPointerizer:
+
 1.	Find your information using the info above.
+
 2.	Click “Connect”
+
 3.	If all is successful, the heatmap will appear and cab identifiers will begin appearing in the left-hand box.  You can slide the slider at the top to select the map that you would like to view.
-a.	If tracking has been running for a while the heatmap and route map will take a while to render.
+
+	a.	If tracking has been running for a while the heatmap and route map will take a while to render.
+
 4.	To look for trips that have been completed while the program was connected click “Perform Trip Analysis”
+
 5.	The threshold values are the values that UBERPointerizer uses to classify a trip.  Good starter values are 0.5 miles and 120 seconds.  This will look for breaks in a vehicle’s update data that are longer than 2 minutes and further than half a mile apart.
 6.	The number of trips will be updated at the bottom – you will not be able to view the “Trips” map until at least 1 trip is found.
-a.	It may take up to 100 (depending on the city) updates before a trip is identified.
+
+	a.	It may take up to 100 (depending on the city) updates before a trip is identified.
+
 7.	The data can be exported.  Press “Pause Tracking” then “Save Raw Data”.  This file can be imported later and viewed.
+
 8.	If tracking is paused or you are viewing offline, you can click on a vehicle in the left-hand box and click “Open Inspector” which will open a window showing specific information for that vehicle including type of service (UberX, Black), all historical latitude and longitude information, and when it was first and last seen.
 
 If you are importing an UBERPointerizer export file or are using raw API dumps you do not need the information stated above.
