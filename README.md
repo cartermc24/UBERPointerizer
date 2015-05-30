@@ -52,6 +52,12 @@ If you are importing an UBERPointerizer export file or are using raw API dumps y
 
 To open an import file, place it in the same directory as the UBERPointerizer executable and click import local file and click “Yes” when asked if it is an UBERPointerizer export file.  To open raw API dumps, each server response must be in its own text file and in a folder called “messages” for UBERPointerizer to recognize them.  It does not matter what the text files are called.
 
+# Screenshots
+![alt tag](http://mccardwell.net/extern/files/filehosting/static/upi/1.png)
+![alt tag](http://mccardwell.net/extern/files/filehosting/static/upi/2.png)
+![alt tag](http://mccardwell.net/extern/files/filehosting/static/upi/3.png)
+![alt tag](http://mccardwell.net/extern/files/filehosting/static/upi/4.png)
+
 This code is provided ‘as is’ for educational purposes and no warrantee is given.  Do not use this application for illegal purposes and I shall not be responsible for misuse.
 
 This software is licensed under the MIT License.
