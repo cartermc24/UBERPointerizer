@@ -25,7 +25,7 @@ Features of UBERPointerizer:
 
 •	View all active vehicles and the exact latitude and longitude of each vehicle.
 
-To use UBERPointerizer online you need to collect the device ID, UBER ID, session token, cloudKitID, and a trait called “localeFileMD5”.  This information is easily collected using an SSL proxy such as CharlesProxy.  Open the app with the proxy running and the data can be collected from the request packet.  Since this application replicates the requests the iPhone application sends to UBER, this information is required.
+To use UBERPointerizer online you need to collect the device ID, UBER ID, the advertising ID, and session token.  This information is easily collected using an SSL proxy such as CharlesProxy.  Open the UBER app with the proxy running and the data can be collected from the request packet.  Since this application replicates the requests the iPhone application sends to UBER, this information is required.  If you are using an Android phone, some information and API requests might need to be changed.
 
 How to use UBERPointerizer:
 
