@@ -1,6 +1,8 @@
 # UBERPointerizer
 Application for tracking trips taken with UBER in a city
 
+![alt tag](http://mccardwell.net/extern/files/filehosting/static/upi/1.png)
+
 UBERPointerizer is an application for Windows that identifies trips taken with the UBER mobile app in a city.  This application mimics the UBER iPhone application and processes data sent back to the UBER app to estimate all the trips taken within a city.  There are two traits of the UBER API that allow this program to function.  First, the API returns identifiers for vehicles that are consistent and do not change from trip to trip, and that latitude and longitude of all the available vehicles in the city are published very often.
 
 This application identifies trips taken by checking to see when cars become unavailable and then available again.  For example, a car becomes unavailable when you request a ride, however when you leave the vehicle, the car will become available again.  This program tracks these periods and the locations of the car and makes approximations to reverse engineer the starting location and ending location of the trip.
@@ -53,7 +55,6 @@ If you are importing an UBERPointerizer export file or are using raw API dumps y
 To open an import file, place it in the same directory as the UBERPointerizer executable and click import local file and click “Yes” when asked if it is an UBERPointerizer export file.  To open raw API dumps, each server response must be in its own text file and in a folder called “messages” for UBERPointerizer to recognize them.  It does not matter what the text files are called.
 
 # Screenshots
-![alt tag](http://mccardwell.net/extern/files/filehosting/static/upi/1.png)
 ![alt tag](http://mccardwell.net/extern/files/filehosting/static/upi/2.png)
 ![alt tag](http://mccardwell.net/extern/files/filehosting/static/upi/3.png)
 ![alt tag](http://mccardwell.net/extern/files/filehosting/static/upi/4.png)
